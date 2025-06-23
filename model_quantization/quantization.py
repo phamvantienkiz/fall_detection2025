@@ -17,4 +17,4 @@ tflite_model = converter.convert()
 with open('best_model_bi_v3v6.tflite', 'wb') as f:
     f.write(tflite_model)
 
-print("Mô hình đã được chuyển đổi và lưu thành công.")
+print("Mô hình đã được chuyển đổi sang tflite và lưu thành công.")
