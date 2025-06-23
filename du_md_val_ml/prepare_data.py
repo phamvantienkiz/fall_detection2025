@@ -4,7 +4,7 @@ import os
 import re
 
 
-# Đọc dữ liệu từ một tệp .TXT
+# Đọc dữ liệu từ một tệp
 def read_data(file_path):
     data = pd.read_csv(file_path, sep='\s+', header=None)
     return data.values  # Ma trận 101x3 (X, Y, Z)
@@ -28,7 +28,7 @@ def load_dataset(data_dir):
                     labels.append(activity_name)  # Nhãn là tên thư mục con (ADL/fall)
                 else:
                     print(f"=> {file_path} shape # (101, 3) line!!!")
-    return np.array(dataset), np.array(labels)  # dataset: (N, 90, 3), labels: (N,)
+    return np.array(dataset), np.array(labels)  # dataset: (N, 101, 3), labels: (N,)
 
 data_dir = "../Segmented_Raw_Data"
 dataset, labels = load_dataset(data_dir)

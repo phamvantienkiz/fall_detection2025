@@ -44,7 +44,7 @@ def train_model(data_dir, seq_length=90, num_classes=num_classes, epochs=50, bat
     # Lấy input_shape từ dữ liệu
     input_shape = (seq_length, X_train.shape[2])  # (timesteps, features)
 
-    # Xây dựng mô hình CNN-LSTM
+    # Xây dựng mô hình
     # model = build_model_cnn(input_shape, num_classes)
     # model = build_model_lstm(input_shape, num_classes)
     model = build_model_bilstm(input_shape, num_classes)
