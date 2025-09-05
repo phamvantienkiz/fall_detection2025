@@ -1,34 +1,32 @@
-Fall Detection (2025)
-=========================================
+# Fall Detection (2025)
 
 This project is part of a graduate thesis focusing on **Fall Detection** using deep learning models and wrist-worn sensor datasets. Current scope includes data pre-processing, model training, evaluation and quantization.
 
-📁 Project Structure
---------------------
+## 📁 Project Structure
 
 ```
 DATN_FD_2025/
-├── data_test/                 
+├── data_test/
 ├── du_md_dataset/             # Preprocessed DU-MD dataset (.npy format)
 ├── du_md_models/              # Trained DU-MD models
 ├── du_md_script/              # Scripts for training DU-MD models
-├── du_md_val_ml/              
+├── du_md_val_ml/
 ├── umafall_dataset/           # Preprocessed UMAFall dataset (.npy format)
 ├── umafall_models/            # Trained UMAFall models
 ├── umafall_script/            # Scripts for training UMAFall models
-├── umafall_val_ml/            
+├── umafall_val_ml/
+├── Mobile/fall_tracking       # Mobile app
 ├── model_quantization/        # Quantization scripts or results
 ├── report/                    # Report file
 ├── Segmented_Raw_Data/        # Raw sensor dataset (after download)
-├── check_lib.py               
+├── check_lib.py
 ├── test_models.py             # Model evaluation script
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # Project documentation
 
 ```
 
-🚀 Getting Started
-------------------
+## 🚀 Getting Started
 
 ### 1\. Clone the repository or download the ZIP:
 
@@ -60,10 +58,10 @@ pip install -r requirements.txt
 
 ### 4\. Download DU-MD Dataset
 
--   Download the DU-MD dataset from the official website:\
-    👉 <https://ahadvisionlab.com/mobility.html>
+- Download the DU-MD dataset from the official website:\
+  👉 <https://ahadvisionlab.com/mobility.html>
 
--   Extract and place it into:
+- Extract and place it into:
 
 ```
 Segmented_Raw_Data/
@@ -72,14 +70,13 @@ Segmented_Raw_Data/
 
 ### 5\. Preprocessed Data
 
--   Preprocessed `.npy` data is already available in:
+- Preprocessed `.npy` data is already available in:
 
-    -   `du_md_dataset/`
+  - `du_md_dataset/`
 
-    -   `umafall_dataset/`
+  - `umafall_dataset/`
 
-🧠 Train Models
----------------
+## 🧠 Train Models
 
 ### DU-MD Dataset:
 
@@ -99,17 +96,17 @@ python training.py
 
 1.  Note:
 
-    -   Make sure to adjust file names and paths in `load_data.py` and `training.py`, including:
+    - Make sure to adjust file names and paths in `load_data.py` and `training.py`, including:
 
-        -   `scaler.pkl`
+      - `scaler.pkl`
 
-        -   `best_model.h5`
+      - `best_model.h5`
 
-        -   `final_model.h5`
+      - `final_model.h5`
 
-        -   `confusion_matrix.png`
+      - `confusion_matrix.png`
 
-        -   `history.png`
+      - `history.png`
 
 ### UMAFall Dataset:
 
@@ -122,25 +119,28 @@ cd umafall_script/
 
 1.  Run training script and adjust configs as above.
 
-📊 Testing & Evaluation
------------------------
+## 📊 Testing & Evaluation
 
--   Use `test_models.py` for testing.
+- Use `test_models.py` for testing.
 
+## ⚠️ Notes
 
+- Ensure consistent file names and paths between scripts.
 
-⚠️ Notes
---------
+- Quantization logic (if needed) is available in `model_quantization/`
 
--   Ensure consistent file names and paths between scripts.
+## Ứng dụng Mobile Flutter
 
--   Quantization logic (if needed) is available in `model_quantization/`
+Thư mục `Mobile` chứa mã nguồn ứng dụng mobile được phát triển bằng Flutter để phục vụ cho việc nhận diện và theo dõi các sự kiện té ngã. Ứng dụng này có thể kết nối với hệ thống nhận diện té ngã, hiển thị kết quả và hỗ trợ người dùng trong việc giám sát sức khỏe.
 
-📄 License
-----------
+## Báo cáo luận án tốt nghiệp
+
+Thư mục `report` chứa file báo cáo luận án tốt nghiệp cho đề tài nhận diện té ngã. File báo cáo trình bày chi tiết về quá trình nghiên cứu, xây dựng mô hình, kết quả thực nghiệm, kiến trúc hệ thống và các ứng dụng liên quan.
+
+## 📄 License
 
 This project is part of an academic thesis and is for educational use only.
 
-* * * * *
+---
 
 Feel free to modify and expand based on your model architecture, visualization tools, or backend integration!
