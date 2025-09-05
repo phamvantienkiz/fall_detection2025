@@ -131,7 +131,7 @@ cd umafall_script/
 
 ## Mobile Flutter Application
 
-The `Mobile` directory contains the source code for the mobile application developed using Flutter, which is designed for fall detection and event tracking. This app can connect to the fall detection system, display results, and assist users in monitoring their health.
+The `Mobile` directory contains the source code for the mobile application developed using Flutter, which is designed for fall detection and event tracking. This app can connect to the fall detection system, display results, and assist users in monitoring their health. Show only `lib/` và `pubspec.yaml`.
 
 ## Thesis Report
 

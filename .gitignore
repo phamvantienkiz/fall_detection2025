@@ -214,7 +214,8 @@ lib/generated_plugin_registrant.dart
 # For library packages, don’t commit the pubspec.lock file.
 # Regenerating the pubspec.lock file lets you test your package against the latest compatible versions of its dependencies.
 # See https://dart.dev/guides/libraries/private-files#pubspeclock
-#pubspec.lock
+pubspec.lock
+.metadata
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -281,6 +282,7 @@ migrate_working_dir/
 *.ipr
 *.iws
 .idea/
+.vscode/
 
 # Symbolication related
 app.*.symbols
@@ -292,3 +294,32 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/app/intermediates
+/android/app/build
+/android/.gradle
+/android/captures
+/android/local.properties
+/android/app/google-services.json
+/android/app/src/debug/google-services.json
+/android/app/src/profile/google-services.json
+/android/app/src/release/google-services.json
+/android/app/src/intermediates/google-services.json
+/android/app/src/debug/res/values/google-services.xml
+/android/app/src/profile/res/values/google-services.xml
+/android/app/src/release/res/values/google-services.xml
+/android/app/src/intermediates/res/values/google-services.xml
+/android/app/src/debug/res/values/firebase_strings.xml
+/android/app/src/profile/res/values/firebase_strings.xml
+/android/app/src/release/res/values/firebase_strings.xml
+/android/app/src/intermediates/res/values/firebase_strings.xml
+/android/app/src/main/res/values/firebase_strings.xml
+/android/app/src/main/google-services.json
+/android/app/src/main/res/values/google-services.xml
+/android/app/src/main/res/values/firebase_strings.xml
+
+# firebase related
+firebase-debug.log
+firebase-error.log
+.firebaserc
+.firebase/
+firebase.json
