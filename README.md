@@ -129,13 +129,13 @@ cd umafall_script/
 
 - Quantization logic (if needed) is available in `model_quantization/`
 
-## Ứng dụng Mobile Flutter
+## Mobile Flutter Application
 
-Thư mục `Mobile` chứa mã nguồn ứng dụng mobile được phát triển bằng Flutter để phục vụ cho việc nhận diện và theo dõi các sự kiện té ngã. Ứng dụng này có thể kết nối với hệ thống nhận diện té ngã, hiển thị kết quả và hỗ trợ người dùng trong việc giám sát sức khỏe.
+The `Mobile` directory contains the source code for the mobile application developed using Flutter, which is designed for fall detection and event tracking. This app can connect to the fall detection system, display results, and assist users in monitoring their health.
 
-## Báo cáo luận án tốt nghiệp
+## Thesis Report
 
-Thư mục `report` chứa file báo cáo luận án tốt nghiệp cho đề tài nhận diện té ngã. File báo cáo trình bày chi tiết về quá trình nghiên cứu, xây dựng mô hình, kết quả thực nghiệm, kiến trúc hệ thống và các ứng dụng liên quan.
+The `report` directory contains the thesis report file for the fall detection topic. The report presents detailed information about the research process, model development, experimental results, system architecture, and related applications.
 
 ## 📄 License
 
